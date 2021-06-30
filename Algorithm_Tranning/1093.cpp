@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-class memeber {
+class member {
 public : bool CallNumber() {
 		// 1093 : [기초-1차원배열] 이상한 출석 번호 부르기1
 		bool valuestatus = false;
@@ -48,21 +48,9 @@ public: bool CallNumberTest(int num)
 
 
 	   // scanf_s("%d", &n); //개수 입력받기
-	   cin >> n;
+
 	   if (n <= 10000 && n >= 1) {
 		   valuestatus = true;
-		   for (i = 1; i <= n; i++) //개수만큼 입력받기
-		   {
-			   // scanf_s("%d", &t); //읽어서
-			   cin >> t;
-			   a[t] = a[t] + 1; //들어있던 값에 1만큼 더해 다시 저장. a[t]+=1 과 같다.
-			   // if문으로 갯수를 세지 않고 배열에 숫자를 넣어 + 1씩 증가 시킴
-		   }
-		   for (i = 1; i <= 23; i++)
-		   {
-			   // printf("%d ", a[i]); //1~23 번 배열에 저장되어있는 값 출력하기
-			   cout << a[i] << " ";
-		   }
 	   }
 	   return valuestatus;
 }
@@ -71,7 +59,7 @@ public: bool CallNumberTest(int num)
 
 
 int main() {
-	memeber mem;
-	mem.CallNumber();
+	member *mem = new member();
+	mem->CallNumber();
 }
 
