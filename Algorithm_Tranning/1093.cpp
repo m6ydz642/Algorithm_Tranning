@@ -58,8 +58,3 @@ public: bool CallNumberTest(int num)
 };
 
 
-int main() {
-	member *mem = new member();
-	mem->CallNumber();
-}
-
