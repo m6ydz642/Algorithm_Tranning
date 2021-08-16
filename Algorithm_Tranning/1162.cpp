@@ -23,12 +23,14 @@ int main() {
     int MidleDigits = FirstDigits % 100;
     int LastDigits = MidleDigits % 10; // 마지막 자리수 확인
 
-    cout << "FirstDigits " << FirstDigits << endl;
-    cout << "MidleDigits " << MidleDigits << endl;
-    cout << "LastDigits " << LastDigits << endl;
+    cout << "FirstDigits " << FirstDigits << endl; // 첫번째 자리
+    cout << "MidleDigits " << MidleDigits << endl; // 중간자리
+    cout << "LastDigits " << LastDigits << endl; // 마지막 숫자
 
     if (MidleDigits % 10 == 0) // 마지막 자리수가 0이면
         cout << "대박" << endl;
+    else
+        cout << "그럭저럭" << endl;
 
     return 0;
 }
