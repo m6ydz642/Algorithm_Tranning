@@ -10,11 +10,12 @@ int main() {
         cin >> r; // 등비값 r
         cin >> n; // 몇번만큼 
 
-        int sum = 1;
+       long long int sum = a;
+        
         for (int i = 1; i < n; i++) {
-            a *= r;
+            sum *= r;
         }
-        cout << a << endl;
+        cout << sum << endl;
 
        
     }
