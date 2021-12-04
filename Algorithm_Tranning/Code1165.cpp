@@ -17,12 +17,12 @@ public:
         cin >> GameMinute;
         cin >> TeamScore;
 
-        for (int i = GameMinute; i < 90; i + 5) 
+        for (int i = GameMinute; i < 90; i += 5) 
         {
             Score++;
         }
         TeamScore += Score;
-        cout << "합계 예상 점수 : " << TeamScore;
+        cout << TeamScore;
 
 
 
